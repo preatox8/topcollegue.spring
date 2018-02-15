@@ -1,0 +1,2 @@
+INSERT INTO COLLEGUE (SCORE, PSEUDO, IMAGEURL) values (100, 'Rod', 'https://images.pexels.com/photos/265036/pexels-photo-265036.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+INSERT INTO COLLEGUE (SCORE, PSEUDO, IMAGEURL) values (800, 'Alice', 'https://images.pexels.com/photos/265036/pexels-photo-265036.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
