@@ -56,10 +56,20 @@ public class CollegueController {
 
 		if(collegue.get("action").contains("aimer")) {
 			collegueajour.setScore(collegueajour.getScore()+10);
+			
 		}else if(collegue.get("action").contains("detester")){
 			collegueajour.setScore(collegueajour.getScore()-5);
 		}
 		
+		collegueRepository.save(collegueajour);
+		
 		return collegueajour;
+	}
+	
+	@RequestMapping(path = "/collegues/{pseudo}", method = RequestMethod.GET)
+	public Collegue affichercollegue(@PathVariable String pseudo) {
+		Collegue collegueajour = collegueRepository.findByPseudo(pseudo);
+		return collegueajour;
+		
 	}
 }
